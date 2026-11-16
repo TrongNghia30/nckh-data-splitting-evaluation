@@ -1,0 +1,11 @@
+{
+  "spearman_median": 0.9833333333333333,
+  "spearman_min": 0.8333333333333333,
+  "reps": 50,
+  "oracle_se_min": 0.004137839670049618,
+  "oracle_se_max": 0.005025756977313701,
+  "oracle_se_mean": 0.004602616854244979,
+  "halves_corr": 0.9959865223145571,
+  "halves_sign": 0.925,
+  "halves_absdiff_mean": 0.0012080519015779268
+}

@@ -1,0 +1,20 @@
+# môi trường và bộ đệm
+.venv/
+__pycache__/
+*.pyc
+data/
+logs/
+
+# bản thảo, mẫu và tài liệu không thuộc gói tái lập
+*.docx
+*.pdf
+Bai_bao*.md
+Bài báo*.docx
+Đề cương*.md
+template/
+figures/
+results/smoke/
+results/figures/
+
+# ghi chép nội bộ
+Kế hoạch thực nghiệm.md

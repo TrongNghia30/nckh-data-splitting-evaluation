@@ -1,0 +1,47 @@
+{
+  "master_seed": 20261103,
+  "data_home": "data/openml",
+  "results_dir": "results",
+  "workers": 3,
+  "models": ["LR", "KNN", "DT", "RF"],
+  "strategies": ["HO70-R", "HO70-S", "HO80-R", "HO80-S", "KF5", "SKF5", "KF10", "SKF10", "RHO10"],
+  "experiments": {
+    "e1": {
+      "kind": "controlled",
+      "dataset": "magic",
+      "oracle_frac": 0.40,
+      "n_grid": [200, 500, 1000, 2000],
+      "pi_grid": ["natural", 0.10, 0.03],
+      "min_minority": 20,
+      "reps": 100
+    },
+    "e2": {
+      "kind": "realcase",
+      "datasets": ["breast_cancer", "mammography"],
+      "oracle_frac": 0.30,
+      "reps": 100
+    },
+    "e4": {
+      "kind": "controlled",
+      "dataset": "miniboone",
+      "oracle_frac": 0.40,
+      "n_grid": [200, 500, 1000, 2000, 5000],
+      "pi_grid": ["natural", 0.10, 0.03],
+      "min_minority": 20,
+      "reps": 100,
+      "natural_only_n": [5000]
+    }
+  },
+  "timing": {
+    "dataset": "magic",
+    "n_grid": [500, 2000, 10000],
+    "repeats": 5
+  },
+  "analysis": {
+    "primary_metric": "f1_pooled",
+    "reference_strategy": "SKF10",
+    "delta": 0.01,
+    "bootstrap_B": 2000,
+    "alpha": 0.05
+  }
+}
